@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accordion.css">
+    <title>Document</title>
+</head>
+<body onload="hide()">
+
+    <div class="container">
+        <h2 onclick="show(this)">heading 1 <span class="arrow"> &#8659;</span></h2>
+        <p>para 1</p>
+
+        <h2 onclick="show(this)">heading 2<span class="arrow"> &#8659;</span></h2>
+        <p>para 2</p>
+        <h2 onclick="show(this)">heading 3<span class="arrow"> &#8659;</span></h2>
+        <p>para 3</p>
+        <h2 onclick="show(this)">heading 3<span class="arrow"> &#8659;</span></h2>
+        <p>para 3</p>
+
+
+    </div>
+
+    <script type="text/javascript">
+        function hide(){
+                para=document.querySelectorAll("p");
+                 for(i=0;i<para.length;i++){
+                    para[i].style.display="none";
+                 }
+                 }
+
+        function show(curEl){
+            ans=curEl.nextElementSibling.style.display;
+            if(ans=="none"){
+                curEl.nextElementSibling.style.display="block"
+
+            }else{
+                curEl.nextElementSibling.style.display="none"
+
+            }
+
+
+
+
+    }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

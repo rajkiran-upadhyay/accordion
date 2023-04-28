@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(to right,purple,white);
+}
+.container{
+    /* border: 1px solid  red; */
+    width: 90%;
+    margin: 200px auto auto auto;
+}
+h2,p{
+   /* border: 1px solid black; */
+   padding: 5px;
+   width: 70%;
+   margin: 1px auto;
+   border-radius: 12px;
+}
+.arrow{
+    float: right;
+    margin-right: 6px;
+}
+h2{
+    background: linear-gradient(to top,white,grey);
+}
